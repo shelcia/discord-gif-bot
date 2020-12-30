@@ -2,17 +2,8 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const fetch = require("node-fetch");
 const dotenv = require("dotenv");
-const http = require("http");
-const PORT = process.env.PORT || 4000;
 
 dotenv.config();
-
-http
-  .createServer(function (req, res) {
-    res.write(`Running on HEROKU PORT ${PORT}`);
-    res.end();
-  })
-  .listen(PORT);
 
 client.login(process.env.DISCORD_BOT_TOKEN);
 
