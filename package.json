@@ -2,7 +2,7 @@
   "name": "discord-gif-bot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Bot.js",
   "scripts": {
     "start": "node Bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
