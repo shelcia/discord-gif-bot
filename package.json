@@ -4,8 +4,7 @@
   "description": "",
   "main": "Bot.js",
   "scripts": {
-    "start": "node Bot.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node Bot.js"
   },
   "author": "Shelcia",
   "license": "MIT",
