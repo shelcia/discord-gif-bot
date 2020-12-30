@@ -7,6 +7,13 @@ const PORT = process.env.PORT || 4000;
 
 dotenv.config();
 
+http
+  .createServer(function (req, res) {
+    res.write(`Running on HEROKU PORT ${PORT}`);
+    res.end();
+  })
+  .listen(PORT);
+
 client.login(process.env.DISCORD_BOT_TOKEN);
 
 client.on("ready", () => {
@@ -35,8 +42,4 @@ client.on("message", async (msg) => {
     //NOW SEND THE RESULT BACK TO SERVER
     msg.channel.send(result.results[index].url);
   }
-});
-
-http.createServer(() => {
-  console.log(`Server running on PORT ${PORT}`);
 });
