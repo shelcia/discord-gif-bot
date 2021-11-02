@@ -9,7 +9,7 @@
   "author": "Shelcia",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^13.3.0",
+    "discord.js": "^13.3.1",
     "dotenv": "^10.0.0",
     "node-fetch": "^2.6.1"
   }
